@@ -27,3 +27,22 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+const galleryList = document.querySelector('.gallery');
+
+// Створення елементів галереї та їх додавання в DOM
+const galleryItems = images.map(image => {
+  const listItem = document.createElement('li');
+  listItem.classList.add('gallery-item');
+
+  const img = document.createElement('img');
+  img.src = image.url;
+  img.alt = image.alt;
+  img.classList.add('gallery-image');
+
+  listItem.appendChild(img);
+  return listItem;
+});
+
+// Додавання всіх елементів галереї в DOM за одну операцію
+galleryList.append(...galleryItems);
