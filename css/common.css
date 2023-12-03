@@ -18,10 +18,11 @@ ul {
 }
 
 input {
+  text-align: center;
   padding: 8px;
   font: inherit;
   width: 150px;
-  gap: 16px;
+  
   border-radius: 8px;
   border: 1px solid #808080;
 }
@@ -141,13 +142,13 @@ li {
 .login-form {
   
   padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    border: 1px dashed blue;
-    width: 432px;
-    height: 290px;
-    border-radius: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px dashed blue;
+  width: 432px;
+  height: 290px;
+  border-radius: 8px;
 }    
 
 .login-form input {
@@ -191,12 +192,11 @@ li {
   margin-bottom: 16px;
 }
 
-button{
-  
+button {  
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   background-color: #4e75ff;
   color: #FFF;
   font-family: "Montserrat", sans-serif;
@@ -281,6 +281,8 @@ button{
   letter-spacing: 0.64px;
   border: none;
   border-radius: 8px;
+  gap: 16px;
+  
   }
 
 #boxes {
